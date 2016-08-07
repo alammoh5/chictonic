@@ -44,7 +44,7 @@ function chictonic_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'chictonic' ),
+		'header-menu' => esc_html__( 'Header Menu', 'chictonic' ),
 	) );
 
 	/*
@@ -102,6 +102,8 @@ add_action( 'widgets_init', 'chictonic_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chictonic_scripts() {
+	 wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Orbitron:400,900)');
+            wp_enqueue_style( 'googleFonts');
 	wp_enqueue_style( 'chictonic-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'chictonic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -113,6 +115,13 @@ function chictonic_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'chictonic_scripts' );
+
+$values = array(
+	'width'         => 10000,
+	'height'        => 500,
+	'default-image' => get_template_directory_uri() . '/images/header-default.jpg',
+);
+add_theme_support( 'custom-header', $values );
 
 /**
  * Implement the Custom Header feature.

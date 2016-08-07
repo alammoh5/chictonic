@@ -25,6 +25,16 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chictonic' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	
+	<?php
+	wp_nav_menu( array(
+				'theme_location'  => 'header-menu',
+				'menu_id'         => 'menu-mobile-items',
+				'menu_class'      => 'menu-items',
+				'container'       => 'div',
+				'container_class' => 'menu',
+				'container_id'    => 'menu-mobile',
+			) );?>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -41,10 +51,11 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		
+	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'chictonic' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
