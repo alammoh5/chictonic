@@ -951,11 +951,11 @@ object {
 	margin: auto 100px;
 }
 #content{
-	background-color: #999999
+	background-color: #F0EAD6;
 }
 #primary{
 	margin: auto 116px;
-	width: 60%;
+	width: 50%;
 	float: left;
 }
 #secondary{
