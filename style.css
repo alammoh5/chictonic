@@ -919,7 +919,7 @@ object {
 	font-weight: bold;
 }
 #masthead{
-	background-image: url("images/header-default.jpg");
+	background-image: url("images/headd.jpg");
 	background-size: 100%;
     background-position: center;
 }
@@ -935,22 +935,21 @@ object {
 	border-bottom: solid 2px;
 }
 #site-navigation{
-	background-color:#262626;
+	background-color:black;
 }
 #primary-menu{
 	margin: auto 100px;
 }
 #content{
-	background-color: #F0EAD6;
+	
 }
 #primary{
-	margin: auto 116px;
-	width: 50%;
-	float: left;
+	padding: 0px 250px;
+	text-align: center;
+	background-color: white;
 }
 #secondary{
-	width: 30%;
-	float: right;
+	background-color: #f2f2f2;
 }
 .site-footer{
     position: relative;
