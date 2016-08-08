@@ -117,7 +117,7 @@ function chictonic_scripts() {
 add_action( 'wp_enqueue_scripts', 'chictonic_scripts' );
 
 $values = array(
-	'width'         => 10000,
+	'width'         => 500,
 	'height'        => 500,
 	'default-image' => get_template_directory_uri() . '/images/header-default.jpg',
 );

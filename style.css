@@ -903,32 +903,22 @@ object {
 	text-align: center;
 	color: white;
 	font-family: 'Orbitron', sans-serif;
-	background-color: #262626;
 	padding-bottom: 5px;
     margin: auto;
 	width: 25%;
-	
 }
 .site-title{
 	font-size: 50px;
+	font-weight: bold;
+	/*background-color: #262626;*/
 	margin: auto;
-    margin-top: 40px;
 }
 .site-description{
-	font-size 0.7em;
-	color: #8c8c8c;
-}
-.site-title:after {
-	content: "";
-	background: rgba(255,255,255,0.3);
-	width: 150px;
-	height: 2px;
-	margin: 15px auto;
-	display: block;
-	
+	background-color: rgba(38, 38, 38, 0.41);
+	color: white;
+	font-weight: bold;
 }
 #masthead{
-	height: 400px;
 	background-image: url("images/header-default.jpg");
 	background-size: 100%;
     background-position: center;
@@ -969,4 +959,8 @@ object {
 }
 .site-info{
 	margin: auto 116px;
+}
+.headshot-image{
+	max-width: 50%;
+    border-radius: 50%;
 }
