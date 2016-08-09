@@ -18,7 +18,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-</head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
@@ -60,3 +59,19 @@
 	
 
 	<div id="content" class="site-content">
+	<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+  </ul>
+</div>

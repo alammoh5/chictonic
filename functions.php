@@ -102,6 +102,7 @@ add_action( 'widgets_init', 'chictonic_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chictonic_scripts() {
+	
 	 wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Orbitron:400,900)');
             wp_enqueue_style( 'googleFonts');
 	wp_enqueue_style( 'chictonic-style', get_stylesheet_uri() );
@@ -113,6 +114,10 @@ function chictonic_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_script('flexslider', get_stylesheet_directory_uri() . '/js/flex-slider/jquery.flexslider.js', array('jquery'), '2.6.1', true);
+	wp_enqueue_script('flexslider-min', get_stylesheet_directory_uri() . '/js/flex-slider/jquery.flexslider-min.js', array('jquery'), '2.6.1', true);
+	wp_enqueue_style( 'flexslider-css', get_stylesheet_directory_uri() . '/js/flex-slider/flexslider.css');
+	wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'chictonic_scripts' );
 
