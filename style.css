@@ -531,7 +531,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
+.main-navigation, .site-footer {
 	clear: both;
 	display: block;
 	float: left;
@@ -539,26 +539,26 @@ a:active {
 	padding: 10px;
 }
 
-.main-navigation ul {
+.main-navigation ul, .site-footer ul{
 	display: inline-block;
 	list-style: none;
 	text-align: center;
 	padding-left: 0;
 }
 
-.main-navigation li {
+.main-navigation li, .site-footer li{
 	float: left;
 	position: relative;
 	padding:10px;
 	margin: auto 10px;
 }
 
-.main-navigation a {
+.main-navigation a, .site-footer a{
 	display: block;
 	text-decoration: none;
 }
 
-.main-navigation ul ul {
+.main-navigation ul ul, .site-footer ul ul{
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -567,16 +567,16 @@ a:active {
 	z-index: 99999;
 }
 
-.main-navigation ul ul ul {
+.main-navigation ul ul ul, .site-footer ul ul ul{
 	left: -999em;
 	top: 0;
 }
 
-.main-navigation ul ul a {
+.main-navigation ul ul a, .site-footer ul ul a{
 	width: 200px;
 }
 
-.main-navigation ul ul li {
+.main-navigation ul ul li, .site-footer ul ul li {
 
 }
 
@@ -919,19 +919,20 @@ object {
 	font-weight: bold;
 }
 #masthead{
-	background-image: url("images/headd.jpg");
+	background-image: url("images/head.jpg");
 	background-size: 100%;
     background-position: center;
+	padding-top: 100px;
 }
-#masthead a, #site-navigation a{
+#masthead a, #site-navigation a, .footer-menu a{
 	text-decoration: none;
 	color: white;
 	font-family: 'Orbitron', sans-serif;
 }
-#masthead a:hover, #site-navigation a:hover{
-	color: #1a8cff;
+#masthead a:hover, #site-navigation a:hover, #site-navigation .current_page_item a{
+	color: #E1D162;
 }
-#site-navigation a:hover{
+#site-navigation a:hover, #site-navigation .current_page_item a{
 	border-bottom: solid 2px;
 }
 #site-navigation{
@@ -952,14 +953,24 @@ object {
 	background-color: #f2f2f2;
 }
 .site-footer{
-    position: relative;
-    height: 3em;
-	background-color:#262626;
+	padding: 10px;
+	color: white;
+	background-color:black;
+}
+.site-footer a:hover, #colophon .current_page_item a{
+	color: #E1D162;
+	border-bottom: solid 2px;
 }
 .site-info{
 	margin: auto 116px;
+	float: right;
 }
 .headshot-image{
 	max-width: 50%;
     border-radius: 50%;
+	border: solid 2px;
+    border-color: #E1D162;
+}
+.footer-menu{
+	float: left;
 }

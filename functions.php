@@ -117,6 +117,17 @@ function chictonic_scripts() {
 	wp_enqueue_script('flexslider', get_stylesheet_directory_uri() . '/js/flex-slider/jquery.flexslider.js', array('jquery'), '2.6.1', true);
 	wp_enqueue_script('flexslider-min', get_stylesheet_directory_uri() . '/js/flex-slider/jquery.flexslider-min.js', array('jquery'), '2.6.1', true);
 	wp_enqueue_style( 'flexslider-css', get_stylesheet_directory_uri() . '/js/flex-slider/flexslider.css');
+	
+	/* jsSocials plugin for social media icons*/
+	wp_enqueue_script('jssocial', get_stylesheet_directory_uri() . '/js/js-socials/jssocials.js', array('jquery'), '1.2.1', true);
+	wp_enqueue_script('jssocials-min', get_stylesheet_directory_uri() . '/js/js-socials/jssocials.min.js', array('jquery'), '1.2.1', true);
+	wp_enqueue_style( 'jssocial-css', get_stylesheet_directory_uri() . '/js/js-socials/jssocials.css');
+	wp_enqueue_style( 'jssocial-css-classic', get_stylesheet_directory_uri() . '/js/js-socials/jssocials-theme-classic.css');
+	
+	/*Scroll up bar */
+	wp_enqueue_script('scrollup', get_stylesheet_directory_uri() . '/js/scroll-up-bar/dist/scroll-up-bar.js', array('jquery'), '0.3.0', true);
+	wp_enqueue_script('scrollup-min', get_stylesheet_directory_uri() . '/js/scroll-up-bar/dist/scroll-up-bar.min.js', array('jquery'), '0.3.0', true);
+	
 	wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'chictonic_scripts' );

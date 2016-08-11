@@ -22,11 +22,11 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chictonic' ); ?></a>
-<nav id="site-navigation" class="main-navigation" role="navigation">
+<div id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'chictonic' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	<header id="masthead" class="site-header" role="banner">
+</div><!-- #site-navigation -->
+	<div id="masthead" class="site-header" role="banner">
 	
 	<?php
 	wp_nav_menu( array(
@@ -37,6 +37,7 @@
 				'container_class' => 'menu',
 				'container_id'    => 'menu-mobile',
 			) );?>
+		
 		<div class="site-branding">
 		<img class = "headshot-image" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 			<?php
@@ -55,23 +56,7 @@
 		</div><!-- .site-branding -->
 
 		
-	</header><!-- #masthead -->
+	</div><!-- #masthead -->
 	
 
 	<div id="content" class="site-content">
-	<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-  </ul>
-</div>
